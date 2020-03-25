@@ -1,0 +1,26 @@
+SASS
+É UM PRÉ-PROCESSADOR CSS
+
+SASS COMPILAMOS E GERAMOS O CSS
+
+SITE SASS
+https://sass-lang.com/
+
+INSTALAÇÃO DO SASS VIA COMANDOS
+https://rubyinstaller.org/ (faça o download do ruby e sua instalação)
+
+
+VERIFICAR INSTALAÇÃO
+gem -v
+gem
+
+INSTALAR
+gem instal sass
+
+VERIFICAR A INSTALAÇÃO
+sass -v
+
+
+COMPILAÇÃO SASS 
+sass -w sass:inc
+

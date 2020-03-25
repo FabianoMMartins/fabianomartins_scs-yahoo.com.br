@@ -1,0 +1,153 @@
+/*  VARIAVEL */ 
+$cor: blue;
+$tamanho_font: 12px;
+$tamanho_font_h1: 22px;
+$tamanho_font_h2: 22px;
+$cor_da_font_titulo_h1: #000;
+$cor_da_font_titulo_h2: rgb(131, 218, 199);
+$font_family_padrao: Arial;
+
+p{
+    color: $cor;
+}
+
+.texto1
+{
+   font-size: $tamanho_font;
+   
+}
+
+.texto2
+{
+    font-size: $tamanho_font_h1;
+    color:$cor_da_font_titulo_h1;
+}
+
+
+.texto3
+{
+    font-size: $tamanho_font_h2;
+    color:$cor_da_font_titulo_h2;
+}
+/*  FIM VARIAVEL */
+
+
+
+/*  ALINHAMENTO */
+.caixa{
+
+    ul{
+        color:$cor;
+    }
+    li{
+        font-size: 16px;
+    }
+    a{
+      color:#000;
+    }
+
+    a:hover{
+     color:red;
+    }
+}
+/*  FIM ALINHAMENTO */
+
+
+
+
+
+/* PARTIALS E IMPORT */
+@import 'seccao1';
+@import 'seccao2';
+@import 'seccao3';
+/* FIM PARTIALS E IMPORT */
+
+
+
+
+
+/* MIXINS */
+ @mixin caixa_noticia(){
+    border:1px solid #000;
+    border-radius: 10px;
+    margin:20px;
+    padding:20px;
+    background-color: lightgray;
+ }
+
+ @mixin caixa_noticia1($cor, $p){
+    border:1px solid #000;
+    border-radius: 10px;
+    margin:20px;
+    padding:$p;
+    background-color: $cor;
+    color:#fff;
+ }
+
+ @mixin titulo()
+ {
+     font-size: 3em;
+     color:red;
+ }
+
+ .artigo1{
+     @include caixa_noticia1(#000,20px);
+ }
+
+ .artigo1 h1{
+     @include titulo();
+ }
+
+ .artigo2{
+    @include caixa_noticia1(#912727, 60px);
+}
+
+.artigo3{
+    @include caixa_noticia();
+}
+/* FIM MIXINS */
+
+
+
+/* HEREDITARIEDADE */
+.paragrafo
+{
+    background-color: aqua;
+    padding: 20px;
+    color:black;
+}
+
+.p1{
+    @extend .paragrafo;
+    font-size: 2em;
+}
+/* FIM HEREDITARIEDADE */
+
+
+
+
+/* OPERADORES */
+$t: 1em;
+$red: 100;
+
+.pgf1{
+  font-size: $t;
+  padding:40px;
+  background-color: rgb($red, 0, 0);
+}
+
+.pgf2{
+    font-size: $t + .5em;
+    padding:40px;
+    background-color: rgb($red + 50, 0, 0);
+}
+
+.pgf3{
+    font-size: $t + 2em;
+    padding:40px;
+    background-color: rgb($red + 100, 0, 0);
+}
+
+/* FIM OPERADORES */
+
+

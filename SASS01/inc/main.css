@@ -1,0 +1,99 @@
+/*  VARIAVEL */
+p {
+  color: blue; }
+
+.texto1 {
+  font-size: 12px; }
+
+.texto2 {
+  font-size: 22px;
+  color: #000; }
+
+.texto3 {
+  font-size: 22px;
+  color: #83dac7; }
+
+/*  FIM VARIAVEL */
+/*  ALINHAMENTO */
+.caixa ul {
+  color: blue; }
+.caixa li {
+  font-size: 16px; }
+.caixa a {
+  color: #000; }
+.caixa a:hover {
+  color: red; }
+
+/*  FIM ALINHAMENTO */
+/* PARTIALS E IMPORT */
+.seccao1 {
+  font-size: 1.5em;
+  color: red; }
+
+.seccao2 {
+  font-size: 4em;
+  color: #00ff22; }
+
+.seccao3 {
+  font-size: 5em;
+  color: green; }
+
+/* FIM PARTIALS E IMPORT */
+/* MIXINS */
+.artigo1 {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff; }
+
+.artigo1 h1 {
+  font-size: 3em;
+  color: red; }
+
+.artigo2 {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 60px;
+  background-color: #912727;
+  color: #fff; }
+
+.artigo3 {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: lightgray; }
+
+/* FIM MIXINS */
+/* HEREDITARIEDADE */
+.paragrafo, .p1 {
+  background-color: aqua;
+  padding: 20px;
+  color: black; }
+
+.p1 {
+  font-size: 2em; }
+
+/* FIM HEREDITARIEDADE */
+/* OPERADORES */
+.pgf1 {
+  font-size: 1em;
+  padding: 40px;
+  background-color: #640000; }
+
+.pgf2 {
+  font-size: 1.5em;
+  padding: 40px;
+  background-color: #960000; }
+
+.pgf3 {
+  font-size: 3em;
+  padding: 40px;
+  background-color: #c80000; }
+
+/* FIM OPERADORES */
+
+/*# sourceMappingURL=main.css.map */
